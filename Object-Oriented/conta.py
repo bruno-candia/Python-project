@@ -1,12 +1,16 @@
+#Classe
 class  Conta:
 
+    #Construtor
     def __init__(self,numero, titular, saldo, limite):
         print("Construindo Objeto ... {}".format(self))
+        #Atributos
         self.__numero = numero
         self.__titular = titular
         self.__saldo = saldo
         self.__limite = limite
 
+    #Métodos
     def extrato(self):
         print("Saldo de {} do titular {}".format(self.__saldo, self.__titular))
 
